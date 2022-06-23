@@ -5,6 +5,7 @@ import {
   Route,
 } from 'react-router-dom';
 import FishPage from './FishPage';
+import FishDetail from './FishDetail';
 
 import './App.css';
 
@@ -16,8 +17,8 @@ export default function App() {
           <Route exact path="/">
             <FishPage />
           </Route>
-          <Route >
-             
+          <Route exact path="/fish/:id">
+            <FishDetail />
           </Route>
         </Switch>
       </div>

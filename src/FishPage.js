@@ -6,7 +6,7 @@ import FishList from './FishList';
 import './App.css';
 
 function App() {
-  const [fishes, setFish] = useState([]);
+  const [fishes, setFishes] = useState([]);
   const [page, setPage] = useState(1);
   const perPage = 10;
    
@@ -17,7 +17,7 @@ function App() {
       const to = page * perPage;
       const fishes = await getFish(from, to);
 
-      setFish(fishes);
+      setFishes(fishes);
     }
     fetch();
   }, [page]);

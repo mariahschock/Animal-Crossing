@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Fish({ _key, icon_url }) {
+export default function Fish({ name, image_url, id }) {
   return (
-    <div className="fish">
-      <h2>{_key}</h2>
-      <img src={icon_url} />
-    </div>
+    <Link to={`/fish/${id}`}><div className="fish">
+      <h3>{name}</h3>
+      <img src={image_url} />
+    </div></Link>
   );
 }

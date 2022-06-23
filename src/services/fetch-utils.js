@@ -5,3 +5,9 @@ export async function getFish(from = 0, to = 10) {
 
   return checkError(resp);
 }
+
+export async function getSingleFish(id){
+  const resp = await client.from('fish').select().match({ id }).single();
+
+  return checkError(resp);
+}
