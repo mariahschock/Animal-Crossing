@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   const [fishes, setFishes] = useState([]);
   const [page, setPage] = useState(1);
-  const perPage = 10;
+  const perPage = 19;
    
   
   useEffect(() => {
@@ -25,12 +25,14 @@ function App() {
 
   return (
     <>
-      <h2>Current Page: {page}</h2>
-      <div className="buttons">
-        <button disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous Page</button>
-        <button disabled={page >= 8} onClick={() => setPage(page + 1)}>Next Page</button>
+      <div className="body">
+        <h2>Current Page: {page}</h2>
+        <div className="buttons">
+          <button disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous Page</button>
+          <button disabled={page >= 8} onClick={() => setPage(page + 1)}>Next Page</button>
+        </div>
+        <FishList fishes={fishes} />
       </div>
-      <FishList fishes={fishes} />
     </>
   );
 }

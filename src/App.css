@@ -3,18 +3,10 @@
   align-items: center;
   justify-content: center;
 }
-
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.body {
+  background-image: url(./page-background.gif);
+  background-size: cover;
+  margin: 0;
 }
 
 .fish-list {
@@ -26,10 +18,56 @@
 }
 .fish {
   padding: 20px;
-  margin: 10px;
+  margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
+  background-color: rgba(127, 178, 241, 0.422);
 }
 img {
   width: 200px;
 }
+.fish-image {
+  width: 150px;
+}
+.fish-detail {
+  background-image: url(./detail-background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  text-align: center;
+  
+}
+.fish-detail .fish-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.fish-detail .fish-data p {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(250, 235, 215, 0.47);
+  padding: 15px;
+  border-radius: 15px;
+}
+.catchphrase-left {
+  width: 400px; 
+  padding-top: 325px;
+  left: 40px;
+  margin: 40px;
+}
+.fish-name {
+  width: 300px;
+  margin: 40px;
+  background-color: rgba(250, 235, 215, 0.47);
+  padding: 10px;
+  border-radius: 15px;
+}
+.museum-phrase-right {
+  width: 400px;
+  padding-top: 325px;
+  margin: 40px;
+}
+
