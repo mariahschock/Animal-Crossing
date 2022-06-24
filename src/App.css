@@ -7,6 +7,7 @@
   background-image: url(./page-background.gif);
   background-size: cover;
   margin: 0;
+  font-family: fantasy;
 }
 
 .fish-list {
@@ -51,6 +52,7 @@ img {
   background-color: rgba(250, 235, 215, 0.47);
   padding: 15px;
   border-radius: 15px;
+  font-family:fantasy
 }
 .catchphrase-left {
   width: 400px; 
