@@ -29,7 +29,7 @@ export default function FishDetail() {
         <Music2 />
         <div className="fish-data">
           <div className="catchphrase-left">
-            <p>Catch Phrase: {fish.catch_phrase}</p>
+            <p>{fish.catch_phrase}</p>
             <img src={catchphrase} />
           </div>
           <div className="fish-name">
