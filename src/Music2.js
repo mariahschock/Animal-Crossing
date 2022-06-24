@@ -8,11 +8,14 @@ export default function Music2() {
   const start = () => {
     audio.play();
   };
+  const stop = () => {
+    audio.pause();
+  };
     
   return (
     <div className="announcement">
       <button onClick={start}>🎵 Click Me 🎵</button>
-
+      <button onClick={stop}>Pause</button>
     </div>
   );
 }

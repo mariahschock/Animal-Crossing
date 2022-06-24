@@ -78,6 +78,7 @@ img {
 button {
   margin: 10px;
   border-radius: 5px;
+  size: 1rem;
 }
 .sunny {
   display: flex;
