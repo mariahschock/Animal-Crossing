@@ -8,8 +8,11 @@
   background-size: cover;
   margin: 0;
   font-family: fantasy;
+  color: antiquewhite;
 }
-
+h1 {
+  padding: 20px;
+}
 .fish-list {
   display: flex;
   flex-direction: row;
@@ -72,4 +75,11 @@ img {
   padding-top: 325px;
   margin: 40px;
 }
-
+button {
+  margin: 10px;
+  border-radius: 5px;
+}
+.sunny {
+  display: flex;
+  flex-direction: row;
+}

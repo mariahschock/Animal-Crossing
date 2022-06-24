@@ -5,6 +5,7 @@ import { getSingleFish } from './services/fetch-utils';
 import { Link } from 'react-router-dom';
 import museum from './museum.png';
 import catchphrase from './catchphrase.png';
+import Music2 from './Music2';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ export default function FishDetail() {
     <>
       <div className="fish-detail">
         <Link to='/'>Home</Link>
+        <Music2 />
         <div className="fish-data">
           <div className="catchphrase-left">
             <p>Catch Phrase: {fish.catch_phrase}</p>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { getFish } from './services/fetch-utils';
 import FishList from './FishList';
+import Music from './Music';
 
 import './App.css';
 
@@ -26,7 +27,8 @@ function App() {
   return (
     <>
       <div className="body">
-        <h2>Current Page: {page}</h2>
+        <h1>Animal Crossing Fish Page: {page}</h1>
+        <Music />
         <div className="buttons">
           <button disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous Page</button>
           <button disabled={page >= 8} onClick={() => setPage(page + 1)}>Next Page</button>
