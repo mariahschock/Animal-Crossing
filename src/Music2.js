@@ -15,7 +15,7 @@ export default function Music2() {
   return (
     <div className="announcement">
       <button onClick={start}>🎵 Click Me 🎵</button>
-      <button onClick={stop}>Pause</button>
+      
     </div>
   );
 }
