@@ -13,6 +13,9 @@
 h1 {
   padding: 20px;
 }
+a:link {
+  text-decoration: none;
+}
 .fish-list {
   display: flex;
   flex-direction: row;
@@ -26,6 +29,8 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   background-color: rgba(127, 178, 241, 0.422);
+  color: antiquewhite;
+  font-size: 1rem;
 }
 img {
   width: 200px;

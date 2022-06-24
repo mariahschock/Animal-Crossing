@@ -31,7 +31,7 @@ function App() {
         <Music />
         <div className="buttons">
           <button disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous Page</button>
-          <button disabled={page >= 8} onClick={() => setPage(page + 1)}>Next Page</button>
+          <button disabled={page >= 5} onClick={() => setPage(page + 1)}>Next Page</button>
         </div>
         <FishList fishes={fishes} />
       </div>
