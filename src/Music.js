@@ -8,9 +8,7 @@ export default function Music() {
   const start = () => {
     audio.play();
   };
-  const stop = () => {
-    audio.pause();
-  };
+
 
   return (
     <div className="sunny">
